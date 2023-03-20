@@ -17,10 +17,10 @@ from django.urls import path
 from  tragedia.views import *
 
 urlpatterns = [
-    path(" ", index),
-    path('inicio/', inicio),
-    path('articulos/', articulos),
-    path('autores/', autores),
-    path('categorias/', categorias),
-    path('contacto/', contacto),
+    path(" ", index, name="index"),
+    path('inicio/', inicio, name="inicio"),
+    path('articulos/', articulos, name="articulos"),
+    path('autores/', autores, name="autores"),
+    path('categorias/', categorias, name="categorias"),
+    path('contacto/', contacto, name="contacto"),
 ]
