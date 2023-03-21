@@ -8,7 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tragedia</title>
+        <title>
+            {% block titulo %}
+            {% endblock %}
+        </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -18,9 +21,24 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" type="text/css" href="{% static 'tragedia/css/styles.css' %}" />
     </head>
-    
-    
-    <!-- Footer-->
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Inicio</a>
+                <a class="navbar-brand" href="#!">Autores</a>
+                <a class="navbar-brand" href="#!">Articulos</a>
+                <a class="navbar-brand" href="#!">Categorias</a>
+                <a class="navbar-brand" href="#!">Contactos</a>
+                <a class="btn btn-primary" href="#signup">Sign Up</a>
+            </div>
+        </nav>
+
+        {% block contenido_mutable%}
+        {%endblock%}
+
+      
+        <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">
                 <div class="row">
