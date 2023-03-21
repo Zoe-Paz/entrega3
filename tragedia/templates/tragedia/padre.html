@@ -10,6 +10,7 @@
         <meta name="author" content="" />
         <title>
             {% block titulo %}
+            Tragedia
             {% endblock %}
         </title>
         <!-- Favicon-->
@@ -25,13 +26,13 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Inicio</a>
-                <a class="navbar-brand" href="#!">Autores</a>
-                <a class="navbar-brand" href="#!">Articulos</a>
-                <a class="navbar-brand" href="#!">Categorias</a>
-                <a class="navbar-brand" href="#!">Contactos</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
-            </div>
+                <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'Autores' %}">Autores</a>
+                <a class="navbar-brand" href="{% url 'Articulos' %}">Articulos</a>
+                <a class="navbar-brand" href="{% url 'Categorias' %}">Categorias</a>
+                <a class="navbar-brand" href="{% url 'Contacto' %}">Contacto</a>
+                <a class="btn btn-primary" href="#NADAAUN">INICIAR</a>
+                </div>                
         </nav>
 
         {% block contenido_mutable%}

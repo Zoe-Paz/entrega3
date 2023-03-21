@@ -3,19 +3,23 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, "tragedia/padre.html")
+    return render(request, "tragedia/index.html")
 
 def inicio(request):
-    return HttpResponse("Inicio")
+     return render(request, 'tragedia/inicio.html', {})
 
 def articulos(request):
-    return HttpResponse("Articulos")
+    return render(request, 'tragedia/articulos.html', {})
 
 def autores(request):
-    return HttpResponse("Autores")
+    return render(request, 'tragedia/autores.html', {})
 
 def categorias(request):
-    return HttpResponse("Categorias")
+    return render(request, 'tragedia/categorias.html', {})
 
 def contacto(request):
-    return HttpResponse("Contacto")
+    return render(request, 'tragedia/contacto.html', {})
+
+def cursoFormulario(request):
+
+    return render(request, 'tragedia/cursoFormulario.html')

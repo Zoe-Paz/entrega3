@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Agregue los datos del articulo</title>
+</head>
+
+<body>
+    <form  action="/cursoFormulario/"    method="post"> {% csrf_token %}
+            <p> Autor/es: <input type = "text" name="autores">
+            <p> Fecha de publicación: <input type = "date" name="fecha">
+            <p> Título: <input type = "text" name="titulo">
+            <p> Categoria: <input type = "text" name="categoria">
+            <p> Descripción: <input type = "text" name="descripcion">
+            <p> Palabras clave: <input type = "text" name="palabras_clave">
+            <p> Archivo: <input type = "file" name="archivo">
+            <input type = "submit" value="Enviar">
+
+     </form>
+
+</body>
+</html>
+    
