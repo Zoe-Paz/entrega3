@@ -8,8 +8,8 @@ from django.urls import path
 from tragedia import views
 
 urlpatterns = [
-    path('', views.index, name="Index"),
-    path('inicio/', views.inicio, name="Inicio"),
+    path('index/', views.index, name="Index"),
+    path('', views.inicio, name="Inicio"),
     path('articulos/', views.articulos, name="Articulos"),
     path('autores/', views.autores, name="Autores"),
     path('categorias/', views.categorias, name="Categorias"),
