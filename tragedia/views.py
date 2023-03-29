@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, "tragedia/padre.html")
+    return render(request, 'tragedia/padre.html')
 
 def inicio(request):
      return render(request, 'tragedia/inicio.html', {})
@@ -21,5 +21,4 @@ def contacto(request):
     return render(request, 'tragedia/contacto.html', {})
 
 def cursoFormulario(request):
-
     return render(request, 'tragedia/cursoFormulario.html')
